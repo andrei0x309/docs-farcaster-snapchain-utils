@@ -1,6 +1,6 @@
 # Table of contents
 
-* [faracster-snapchain-utils](README.md)
+* [farcaster-snapchain-utils](README.md)
 
 ## Getting Started
 
