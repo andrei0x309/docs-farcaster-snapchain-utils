@@ -46,7 +46,8 @@ const client = new SnapChainClient({
     PK: signer,
     NODE_URL: 'hub-grpc.pinata.cloud', // your node domain, ex, node.fosscaster.xyz
     NODE_USER: '', // node auth user if needed
-    NODE_PASS: '', // node auth password if needed 
+    NODE_PASS: '', // node auth password if needed
+    GRPC_SSL: true // if node has SSL this is optional
 }) 
 
 // client.method... -> you can call read/write methods like follow / createCast, etc

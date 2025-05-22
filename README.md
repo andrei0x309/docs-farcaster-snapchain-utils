@@ -18,17 +18,19 @@ layout:
     visible: true
 ---
 
-# faracster-snapchain-utils
+# farcaster-snapchain-utils
 
-This is a library to simplify the interaction with a Farcaster snapchain node.
+This is a library that simplifies the interaction with a Farcaster snapchain node.
 
 It can be used in read-only mode or in read/write mode.
 
 If you use it in read/write mode, you will need to provide a private key and a FID.
 
-If a node is not provided, the library will use the Pinata public node.
+If a node is not provided, the library will use the public MVR  node, but it is not guaranteed that this public node is functional. Many public nodes come and go, if you have an address, you can use that.\
+\
+If you alo run a public node and want that to be used by this library you can contact me.
 
-You can also use it with Neynar, provided you pass the `NEYNAR_API_KEY` to the constructor or to `changeNode` the method.
+You can also use it with Neynar, provided you pass the `NEYNAR_API_KEY` to the constructor or to `changeNode` method.
 
 The library allows you to change the node or signer, so you don't need to create a new instance every time you want to change the node or signer.
 
