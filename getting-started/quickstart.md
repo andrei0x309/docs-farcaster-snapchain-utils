@@ -42,12 +42,17 @@ const userFid = 1791;
 const signer = "0x222ab147ccbaa2dc660717f28ea4aaeea13b93fe9df297669efdd12f7c1669df";
 
 const client = new SnapChainClient({
+    // FID & PK are needed if you will do write actions on behalf of the user
     FID: userFid,
     PK: signer,
-    NODE_URL: 'hub-grpc.pinata.cloud', // your node domain, ex, node.fosscaster.xyz
-    NODE_USER: '', // node auth user if needed
-    NODE_PASS: '', // node auth password if needed
-    GRPC_SSL: true // if node has SSL this is optional
+    // your node address, ex, node.fosscaster.xyz you can include the port
+    NODE_URL: 'hub.merv.fun:3383',
+    // node auth user if needed
+    NODE_USER: '', 
+    // node auth password if needed
+    NODE_PASS: '',
+    // if node GRPC has SSL, this is optional, will default to true
+    GRPC_SSL: false 
 }) 
 
 // client.method... -> you can call read/write methods like follow / createCast, etc
